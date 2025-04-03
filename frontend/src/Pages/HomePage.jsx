@@ -4,12 +4,12 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import axios from 'axios'; // Import axios
-import { useAuth } from "../Context/AuthContext"; // Import useAuth
-import { useNavigate, useLocation } from "react-router-dom"; // Import useNavigate and useLocation
-import { Search, Save, CheckCircle, AlertCircle, Loader2 } from 'lucide-react'; // Import icons
+import axios from 'axios'; 
+import { useAuth } from "../Context/AuthContext"; 
+import { useNavigate, useLocation } from "react-router-dom"; 
+import { Search, Save, CheckCircle, AlertCircle, Loader2 } from 'lucide-react'; 
 
-// Define API URL (use environment variables in a real app)
+
 const API_BASE_URL = "https://recipe-app-eight-psi.vercel.app/api";
 
 const images = [

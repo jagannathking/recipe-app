@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { Facebook, Instagram, Twitter } from "lucide-react"; // Social Icons
+import { Facebook, Instagram, Twitter } from "lucide-react"; 
 
 const FooterPage = () => {
   return (
