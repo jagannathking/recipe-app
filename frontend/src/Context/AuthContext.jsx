@@ -4,7 +4,7 @@ import {jwtDecode} from "jwt-decode";
 
 export const AuthContext = createContext();
 
-const BASE_URL = "https://book-management-seven-sepia.vercel.app/api/users";
+const BASE_URL = "https://recipe-app-eight-psi.vercel.app/api/users";
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(() => {

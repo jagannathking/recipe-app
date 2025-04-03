@@ -1,10 +1,24 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
-const UserSchema = new mongoose.Schema({
-    name: String,
-    email: { type: String, unique: true, required: true },
-    password: { type: String, required: true },
-    savedRecipes: [{ type: mongoose.Schema.Types.ObjectId, ref: "Recipe" }]
-});
+const userSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required: true,
+    },
+    email: {
+        type: String,
+        required: true,
+        unique: true, // Added unique constraint for email
+        lowercase: true // Store emails consistently
+    },
+    password: {
+        type: String,
+        required: true
+    },
+    // This stores an array of Spoonacular recipe IDs as strings
+    savedRecipes: [{ type: String }]
+}, { timestamps: true }); // Added timestamps
 
-module.exports = mongoose.model("User", UserSchema);
+const User = mongoose.model('User', userSchema);
+
+module.exports = User;

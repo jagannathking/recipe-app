@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import HomePage from "../Pages/HomePage";
 import RegisterPage from "../Pages/RegisterPage";
-import LoginPage from "../Pages/RegisterPage";
+import LoginPage from "../Pages/LoginPage";
 import SavePage from "../Pages/SavePage";
 import AboutPage from "../Pages/AboutPage";
 import ContactPage from "../Pages/ContactPage";
