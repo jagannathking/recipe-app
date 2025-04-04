@@ -91,7 +91,7 @@ This application provides a user-friendly interface to:
     *   Create a `.env` file in the `frontend` directory and add the backend API URL:
         ```env
         # Make sure this matches where your backend server will run
-        REACT_APP_API_URL=http://localhost:5000/api
+        REACT_APP_API_URL=https://vercel.com/jagannaths-projects-36d87af2/recipe-app/BjYWiv3Y4VCAEd2j5WBTH4TdzVKW
         ```
 
 ### Running the App
@@ -102,14 +102,14 @@ This application provides a user-friendly interface to:
         npm start
         # Or if you have a dev script: npm run dev
         ```
-    *   The backend should be running (e.g., on `http://localhost:5000`).
+    *   The backend should be running (e.g., on `https://vercel.com/jagannaths-projects-36d87af2/recipe-app/BjYWiv3Y4VCAEd2j5WBTH4TdzVKW`).
 
 2.  **Start the Frontend Development Server:**
     *   Open *another* terminal in the `frontend` directory:
         ```bash
         npm run dev
         ```
-    *   The frontend app should open in your browser (usually `http://localhost:5173` or similar).
+    *   The frontend app should open in your browser (usually `https://recipe-app-21bu.vercel.app/` or similar).
 
 ## Usage 📖
 
