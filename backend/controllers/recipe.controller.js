@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 
 dotenv.config();
 
-// 📌 Search for Recipes
+// Search for Recipes
 exports.searchRecipe = async (req, res) => {
     try {
         const { query } = req.query;
@@ -37,7 +37,7 @@ exports.searchRecipe = async (req, res) => {
     }
 };
 
-// 📌 Get Saved Recipes for a User (With Full Recipe Data)
+// Get Saved Recipes for a User 
 exports.getSavedRecipes = async (req, res) => {
     try {
         if (!req.user || (!req.user.id && !req.user._id)) {
@@ -101,7 +101,7 @@ exports.saveRecipe = async (req, res) => {
         // If recipe does not exist, create and save it
         if (!existingRecipe) {
             existingRecipe = new Recipe({
-                apiId: recipeIdStr, // Store as apiId
+                apiId: recipeIdStr, 
                 title,
                 image
                 // Note: We are not linking users here in the Recipe model based on current logic

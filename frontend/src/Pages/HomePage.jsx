@@ -42,8 +42,8 @@ const HomePage = () => {
     setInitialError('');
     try {
       // Example: Fetch recipes for "popular" or another default term
-      const response = await axios.get(`${API_BASE_URL}/recipes/search`, {
-        params: { query: 'past', number: 8 }, // Fetch 8 pasta recipes initially
+      const response = await axios.get(`${API_BASE_URL}/recipes/search/`, {
+        params: { query: 'n', number: 12}, // Fetch 8 pasta recipes initially
       });
       if (response.data && response.data.success) {
         setInitialRecipes(response.data.data || []);
@@ -79,9 +79,9 @@ const HomePage = () => {
       return;
     }
 
-    setLoadingSearch(true); // Use search loading state
-    setSearchError("");     // Use search error state
-    setSearchResults([]);   // Clear previous search results
+    setLoadingSearch(true); 
+    setSearchError("");     
+    setSearchResults([]);   
     setSaveStatus({});
 
     try {
